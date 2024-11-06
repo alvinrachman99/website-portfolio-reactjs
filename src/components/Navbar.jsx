@@ -1,22 +1,37 @@
+import { useState } from 'react'
 import '../styles/Navbar.css'
+import { FaBars } from "react-icons/fa6";
 
 function Navbar() {
-  return (
-    <nav>
-        <div className="wrapper">
-            <div className="logo">
-                <a href="">Alvin Rachman Septian</a>
+
+    const [statusTampil, setStatusTampil] = useState('');
+    
+    function tampilMenu(){
+        if(statusTampil == ''){
+            setStatusTampil('tampil')
+        } else {
+            setStatusTampil('')
+        }
+    }
+
+    return (
+
+        <nav>
+            <div className="wrapper">
+                <div className="logo">
+                    <a href="">Alvin Rachman Septian</a>
+                </div>
+                <button onClick={tampilMenu}><FaBars /></button>
+                <div className={`menu ${statusTampil}`}>
+                    <ul>
+                        <li><a href="#portofolio">Portofolio</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experiance">Experiance</a></li>
+                    </ul>
+                </div>
             </div>
-            <div className="menu">
-                <ul>
-                    <li><a href="#portofolio">Portofolio</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experiance">Experiance</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-  )
+        </nav>
+    )
 }
 
 export default Navbar
