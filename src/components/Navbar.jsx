@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import '../styles/Navbar.css'
 import { FaBars } from "react-icons/fa6";
+import { IoMdClose } from "react-icons/io";
 
 function Navbar() {
 
@@ -21,7 +22,12 @@ function Navbar() {
                 <div className="logo">
                     <a href="">Alvin Rachman Septian</a>
                 </div>
-                <button onClick={tampilMenu}><FaBars /></button>
+                <button onClick={tampilMenu}>
+                    {
+                        statusTampil == '' ? <FaBars /> : <IoMdClose />
+                    }
+                
+                </button>
                 <div className={`menu ${statusTampil}`}>
                     <ul>
                         <li><a href="#portofolio">Portofolio</a></li>
