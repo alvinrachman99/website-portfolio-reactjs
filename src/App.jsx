@@ -3,6 +3,7 @@ import './App.css'
 import Home from './pages/Home'
 import DetailPortofolio from './pages/DetailPortofolio'
 import PageNotFound from './pages/PageNotFound'
+import Experiance from './pages/Experiance'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path='/portofolio/:id' element={<DetailPortofolio />} />
         <Route path='/page-not-found' element={<PageNotFound />} />
         <Route path='*' element={<PageNotFound />} />
+        <Route path='/experiance' element={<Experiance />} />
         </Routes>
     </BrowserRouter>
   )
