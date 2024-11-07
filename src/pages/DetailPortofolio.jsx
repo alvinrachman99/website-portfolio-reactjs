@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom"
+import { useParams, Navigate } from "react-router-dom"
 import '../styles/DetailPortofolio.css'
 import { portofolioList } from '../data/DataPortofolio'
 import Navbar from "../components/Navbar"
@@ -8,7 +8,10 @@ function DetailPortofolio() {
 
     const {id} = useParams()
     const data = portofolioList.find((item)=> item.id == id)
-    console.log(data)
+
+    if(data === undefined){
+        return <Navigate to='/page-not-found' />
+    }
 
     return (
         <>

@@ -2,6 +2,8 @@ import { useState } from 'react'
 import '../styles/Navbar.css'
 import { FaBars } from "react-icons/fa6";
 import { IoMdClose } from "react-icons/io";
+import { HashLink } from "react-router-hash-link"
+import { Link } from 'react-router-dom'
 
 function Navbar() {
 
@@ -20,7 +22,7 @@ function Navbar() {
         <nav>
             <div className="wrapper">
                 <div className="logo">
-                    <a href="">Alvin Rachman Septian</a>
+                    <Link to="/">Alvin Rachman Septian</Link>
                 </div>
                 <button onClick={tampilMenu}>
                     {
@@ -30,9 +32,9 @@ function Navbar() {
                 </button>
                 <div className={`menu ${statusTampil}`}>
                     <ul>
-                        <li><a href="#portofolio">Portofolio</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#experiance">Experiance</a></li>
+                        <li><HashLink to="/#portofolio">Portofolio</HashLink></li>
+                        <li><HashLink to="/#about">About</HashLink></li>
+                        <li><HashLink to="/#experiance">Experiance</HashLink></li>
                     </ul>
                 </div>
             </div>

@@ -1,7 +1,8 @@
-import './App.css'
-import DetailPortofolio from './pages/DetailPortofolio'
-import Home from './pages/Home'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import './App.css'
+import Home from './pages/Home'
+import DetailPortofolio from './pages/DetailPortofolio'
+import PageNotFound from './pages/PageNotFound'
 
 function App() {
   return (
@@ -9,7 +10,9 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/portofolio/:id' element={<DetailPortofolio />} />
-      </Routes>
+        <Route path='/page-not-found' element={<PageNotFound />} />
+        <Route path='*' element={<PageNotFound />} />
+        </Routes>
     </BrowserRouter>
   )
 }
