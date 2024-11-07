@@ -3,6 +3,7 @@ import '../styles/DetailPortofolio.css'
 import { portofolioList } from '../data/DataPortofolio'
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
+import ScrollToTop from "../components/ScrollToTop"
 
 function DetailPortofolio() {
 
@@ -32,6 +33,7 @@ function DetailPortofolio() {
                 </div>
             </section>
             <Footer />
+            <ScrollToTop />
         </>
     )
 }
