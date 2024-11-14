@@ -1,4 +1,4 @@
-#detail-portofolio > .wrapper {
+  #detail-portofolio > .wrapper {
     width: 60%;
   }
   #detail-portofolio > .wrapper > img {
@@ -27,4 +27,26 @@
   #detail-portofolio > .wrapper > p.skill > #detail-portofolio > .wrapper > p.skill:not(:first-child) > span {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    #detail-portofolio > .wrapper {
+      min-height: 400px;
+    }
+
+    #detail-portofolio > .wrapper > h1 {
+      font-size: 1.5rem;
+    }
+
+    #detail-portofolio > .wrapper {
+      width: 80%;
+    }
+    
+    #detail-portofolio > .wrapper > p.skill {
+      font-size: 0.8rem;
+    }
+  
+    #detail-portofolio > .wrapper > p.skill > span {
+      padding: 2px 4px;
+    }
   }

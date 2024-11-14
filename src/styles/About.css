@@ -50,4 +50,8 @@
     #about > .wrapper {
       width: 80%;
     }
+
+    #about > .wrapper > p {
+      font-size: medium;
+    }
   }

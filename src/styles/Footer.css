@@ -1,7 +1,15 @@
 footer {
-    background-color: #39404a;
-    text-align: center;
-    line-height: 100px;
-    color: #fff;
-    letter-spacing: 5px;
+  background-color: #39404a;
+  text-align: center;
+  line-height: 100px;
+  color: #fff;
+  letter-spacing: 5px;
+}
+
+@media only screen and (max-width: 1000px) {
+  footer {
+    font-size: small;
+    letter-spacing: 0;
+    line-height: 60px;
   }
+}

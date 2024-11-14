@@ -13,6 +13,10 @@
   
   @media only screen and (max-width: 1000px) {
     .grid {
-      grid-template-columns: 45% 45%;
+      grid-template-columns: 90%;
+    }
+
+    .grid > .item > a > img {
+      height: 150px;
     }
   }
