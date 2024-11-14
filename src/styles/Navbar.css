@@ -39,6 +39,11 @@ nav {
     text-decoration: none;
     color: #fff;
   }
+
+  .menu > ul > li > a:hover {
+    color: #aa392d;
+  }
+
   nav > .wrapper > button {
     cursor: pointer;
     display: none;

@@ -4,6 +4,7 @@ import { FaBars } from "react-icons/fa6";
 import { IoMdClose } from "react-icons/io";
 import { HashLink } from "react-router-hash-link"
 import { Link } from 'react-router-dom'
+import { motion } from 'motion/react'
 
 function Navbar() {
 
@@ -22,7 +23,7 @@ function Navbar() {
         <nav>
             <div className="wrapper">
                 <div className="logo">
-                    <Link to="/">Alvin Dev</Link>
+                    <HashLink to="/#header">Alvin Dev</HashLink>
                 </div>
                 <button onClick={tampilMenu}>
                     {
@@ -32,9 +33,9 @@ function Navbar() {
                 </button>
                 <div className={`menu ${statusTampil}`}>
                     <ul>
-                        <li><HashLink to="/#portofolio">Portofolio</HashLink></li>
-                        <li><HashLink to="/#about">About</HashLink></li>
-                        <li><Link to="/experiance">Experiance</Link></li>
+                        <motion.li whileHover={{ scale: 1.1 }} ><HashLink to="/#portofolio">Portofolio</HashLink></motion.li>
+                        <motion.li whileHover={{ scale: 1.1 }} ><HashLink to="/#about">About</HashLink></motion.li>
+                        <motion.li whileHover={{ scale: 1.1 }} ><Link to="/experiance">Experiance</Link></motion.li>
                     </ul>
                 </div>
             </div>
