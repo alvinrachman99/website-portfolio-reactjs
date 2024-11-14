@@ -8,6 +8,23 @@
   }
   #detail-portofolio > .wrapper > p.skill {
     text-align: center;
-    font-size: 1.5rem;
-    color: #222831;
+    color: #fff;
+    font-size: 1.2rem;
+  }
+
+  #detail-portofolio > .wrapper > p.skill > span {
+    background-color: #2C3E50;
+    padding: 3px 7px;
+    border-radius: 5px;
+  }
+
+  #detail-portofolio > .wrapper > p.skill > span:not(:last-child):not(.dropdown-toggle),
+  #detail-portofolio > .wrapper > p.skill > #detail-portofolio > .wrapper > p.skill:not(:last-child) > span {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  #detail-portofolio > .wrapper > p.skill > span:not(:first-child),
+  #detail-portofolio > .wrapper > p.skill > #detail-portofolio > .wrapper > p.skill:not(:first-child) > span {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }

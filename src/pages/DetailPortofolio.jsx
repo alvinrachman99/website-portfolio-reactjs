@@ -25,7 +25,7 @@ function DetailPortofolio() {
                         {
                             data.skill.map((item, index)=>{
                                 return (
-                                    item + ' '
+                                    <span> {item} </span>
                                 )
                             })
                         }

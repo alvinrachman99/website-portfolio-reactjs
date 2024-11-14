@@ -1,18 +1,18 @@
 import '../styles/About.css'
 
 import { FaPhp, FaHtml5, FaJs, FaReact, FaBootstrap, FaLaravel, FaNode, FaGithub } from "react-icons/fa";
-import { FaGolang } from "react-icons/fa6";
 import { PiFileCssLight } from "react-icons/pi";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { DiCodeigniter } from "react-icons/di";
+import { SiMysql, SiPostgresql, SiVisualstudiocode } from "react-icons/si";
 
 function About() {
   return (
     <section id="about">
         <div className="wrapper">
             <h3>About</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, rerum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa consectetur totam labore debitis hic perspiciatis eum excepturi libero. Explicabo molestias maxime eius unde cumque accusantium rem perspiciatis expedita itaque consequuntur!</p>
+            <p>My name is Alvin Rachman Septian, I'm a Junior Web Developer and graduated from Gunadarma University majoring in Informatics Management. I'm currently living in Bekasi City, Indonesia.</p>
+            <p>As an experienced Web Developer with 3 years of experience I have primarily focused on web application development. Throughout my career, I have successfully developed various impactful applications and managed complex projects, deepening my understanding of the software development lifecycle. My commitment to delivering high-quality work has helped me become a fast learner, always seeking out new challenges to improve my skills</p>
             <h4>Programming Language & Tools</h4>
             <div className="skills">
                 <FaPhp />
@@ -20,13 +20,15 @@ function About() {
                 <FaJs />
                 <FaReact />
                 <PiFileCssLight />
-                <FaGolang />
                 <FaBootstrap />
                 <RiTailwindCssFill />
                 <DiCodeigniter />
                 <FaLaravel />
                 <FaNode />
+                <SiMysql />
+                <SiPostgresql />
                 <FaGithub />
+                <SiVisualstudiocode />
             </div>
         </div>
     </section>

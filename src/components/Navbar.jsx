@@ -22,7 +22,7 @@ function Navbar() {
         <nav>
             <div className="wrapper">
                 <div className="logo">
-                    <Link to="/">Alvin Rachman Septian</Link>
+                    <Link to="/">Alvin Dev</Link>
                 </div>
                 <button onClick={tampilMenu}>
                     {
