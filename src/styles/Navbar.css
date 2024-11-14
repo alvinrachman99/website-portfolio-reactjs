@@ -91,4 +91,7 @@ nav {
     .menu > ul > li > a:hover {
       background-color: #222831;
     }
+    .logo > a {
+      font-size: large;
+    }
   }

@@ -21,7 +21,6 @@ function Header() {
                 ease: "easeInOut" 
               }}
               src={profilePicture} 
-              style={{ width:'20%', borderRadius: '100%' }}
             />
             <h3>Alvin Rachman Septian</h3>
             <p>Programmer - Web Developer</p>
